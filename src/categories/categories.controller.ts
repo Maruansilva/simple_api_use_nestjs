@@ -24,7 +24,7 @@ export class CategoriesController {
         return await this.categoriesService.update(category)    
     }
 
-    @Delete()
+    @Delete(":id")
     async delete(@Param() params){
         return await this.categoriesService.delete(params.id)    
     }
